@@ -7,7 +7,8 @@ const resulterrer =document.getElementById("errer");
 const base_url = "https://cutlinkapi.adarshkrdubay.repl.co";
 
 function isValidUrl(inputUrl) {
-    const urlPattern = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/;
+      const urlPattern = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?(\?.*)?$/;
+
     return urlPattern.test(inputUrl);
 }
 function shortenUrl(inputLink) {
