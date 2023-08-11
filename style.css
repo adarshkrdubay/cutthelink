@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cut The Link - URL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cut The Link</h1>
+      <input type="text" id="original-url" name="original_url" placeholder="Paste your long URL here" required>
+      <br><br>
+      <button id="submit" >Shorten</button>
+    <div id="response" style="display: none;">
+      <p id="linkid">Your shortened URL:</p>
+      <a id="shortened-link" href="" target="_blank"></a>
+      
+    </div>
+    <div id="responsenon" style="display: none;">
+      <p id="errer">No url provided</p>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
