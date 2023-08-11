@@ -70,8 +70,10 @@ button.addEventListener("click", () => {
                 button.textContent = "Shorten";
             });
     } else {
+         responseDiv.style.display = 'none';
         resulterrer.innerText = "Invalid URL";
         responsenonDiv.style.display = 'block';
+          
         
     }
 });
