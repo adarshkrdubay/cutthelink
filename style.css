@@ -1,28 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cut The Link - URL Shortener</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Cut The Link</h1>
-      <input type="text" id="original-url" name="original_url" placeholder="Paste your long URL here" required>
-      <br><br>
-      <button id="submit" >Shorten</button>
-    <div id="response" style="display: none;">
-      <p id="linkid">Your shortened URL:</p>
-      <a id="shortened-link" href="" target="_blank"></a>
-      
-    </div>
-    <div id="responsenon" style="display: none;">
-      <p id="errer">No url provided</p>
-    </div>
-  </div>
-
-  <script src="./script.js"></script>
-</body>
-</html>
-
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #c2db34, #e74c3c);
+}
+.container {
+  text-align: center;
+  padding: 45px;
+  background: linear-gradient(to bottom right, #e74c3c, #c2db34);
+  border-radius: 26px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 90%;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #0056b3;
+}
