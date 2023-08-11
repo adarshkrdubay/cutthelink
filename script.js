@@ -51,6 +51,7 @@ button.addEventListener("click", () => {
         responsenonDiv.style.display = 'block';
     } else if (isValidUrl(url)) {
         responsenonDiv.style.display = 'none';
+        button.textContent = "Wait";
         
         shortenUrl(url)
             .then(shortenedUrl => {
@@ -59,11 +60,13 @@ button.addEventListener("click", () => {
                 result.textContent = shortenedUrl;
                 result.href = shortenedUrl;
                 responseDiv.style.display = 'block';
+                button.textContent = "Shorten";
             })
             .catch(error => {
                 console.error("An error occurred:", error.message);
                 resulterrer.innerText = error.message;
                 responsenonDiv.style.display = 'block';
+                button.textContent = "Shorten";
             });
     } else {
         resulterrer.innerText = "Invalid URL";
