@@ -111,25 +111,6 @@ if __name__ == '__main__':
 - The Flask server is configured to run on host 0.0.0.0 and port 81.
 - The domainname variable needs to be updated with the actual domain where the server is running.
 
-## **Security Considerations:**
-
-- Input validation and sanitization are crucial to prevent potential security vulnerabilities.
-- HTTPS should be considered for secure communication between the client and server.
-
-## **Suggestions for Improvement:**
-
-1. **Enhanced Error Handling:**
-    - Provide more informative error messages to users in case of failures.
-2. **Domain Configuration:**
-    - Update the domainname variable to match the actual domain where the server is running.
-3. **Documentation:**
-    - Add comments to the code for better understanding.
-    - Include a README file in the GitHub repository with setup instructions.
-4. **Testing:**
-    - Test the application thoroughly to identify and fix any potential bugs or issues.
-5. **Future Improvements:**
-    - Consider adding features like analytics for tracking link usage.
-    - Implement user authentication for a personalized experience.
 
 ## **License:**
 
