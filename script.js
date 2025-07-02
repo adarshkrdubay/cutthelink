@@ -4,7 +4,7 @@ const responseDiv = document.getElementById("response");
 const responsenonDiv = document.getElementById("responsenon");
 const resulterrer =document.getElementById("errer");
 
-const base_url = "https://cutlinkapi.adarshkrdubay.repl.co";
+const base_url = "https://testuset.pythonanywhere.com/";
 
 function isValidUrl(inputUrl) {
       const urlPattern = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?(\?.*)?$/;
