@@ -14,7 +14,7 @@ function isValidUrl(inputUrl) {
 function shortenUrl(inputLink) {
     const url = encodeURIComponent(inputLink);
 
-    const shortenUrl = `${base_url}/shorten`;
+    const shortenUrl = `${base_url}/shorten/free`;
 
     const requestOptions = {
         method: 'POST',
