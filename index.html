@@ -9,26 +9,34 @@
 <body>
   <div class="container">
     <h1>Cut The Link</h1>
-      <input type="text" id="original-url" name="original_url" placeholder="Paste your long URL here" required>
-      <br><br>
-      <button id="submit" >Shorten</button>
+    <input type="text" id="original-url" name="original_url" placeholder="Paste your long URL here" required>
+    <br><br>
+    <button id="submit">Shorten</button>
+
     <div id="response" style="display: none;">
       <p id="linkid">Your shortened URL:</p>
       <a id="shortened-link" href="" target="_blank"></a>
-      
     </div>
+
     <div id="responsenon" style="display: none;">
       <p id="errer">No url provided</p>
     </div>
   </div>
 
-  
-  <div id="report-issue">
+  <!-- 🔽 Download APK Button -->
+  <div id="download-apk" style="margin-top: 20px; text-align: center;">
+    <a href="path-to-your-apk/app-release.apk" download>
+      <button>Download APK</button>
+    </a>
+  </div>
+
+  <!-- 🔧 Report Issue Button -->
+  <div id="report-issue" style="margin-top: 10px; text-align: center;">
     <a href="https://github.com/adarshkrdubay/cutthelink/issues" target="_blank">
       <button>Report an Issue</button>
     </a>
   </div>
+
   <script src="./script.js"></script>
-  
 </body>
 </html>
